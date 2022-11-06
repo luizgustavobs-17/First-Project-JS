@@ -1,0 +1,61 @@
+<!Doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Adicionar Produto</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script src="https://kit.fontawesome.com/22bf4bcc9b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        <nav id="nav-bar">
+            <div id="logo">Logo Mercado</div>
+
+            <span class="nav-link">
+                <a href="./stock.html">
+                    <i class="fa-solid fa-table-list"></i>
+                    Consultar o Estoque
+                </a>
+            
+                <a href="#">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar no Estoque
+                </a>
+            </span>
+
+        </nav>
+
+        <div id="form-register">
+            <form action="#">
+                <div class="input-form">
+                    <label for="product_name">Nome do Produto</label> <br>
+                    <input type="text" id="product_name"> <br>
+                </div>
+
+                <div class="input-form">
+                    <label for="price">Preço</label> <br>
+                    <input type="number" id="price" > <br>
+                </div>
+
+                <div class="input-form">
+                    <label for="add_stock">Quantidade a ser adicionada no Estoque</label> <br>
+                    <input type="number" id="add_stock"> <br>
+                </div>
+
+                <div class="input-form">
+                    <label for="barcode">Código de Barras</label> <br>
+                    <input type="text" id="barcode" pattern="[0-9]{,13}"> <br>
+                </div>
+
+                <div>
+                    <input type="submit" value="Registar Produto" id="btn-register" onclick="registerProduct()">
+                </div>
+            </form>
+        </div>
+
+        <script src="./scripts/register_product.js" defer></script>
+    </body>
+</html>

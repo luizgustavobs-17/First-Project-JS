@@ -1,0 +1,57 @@
+<!Doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estoque</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script src="https://kit.fontawesome.com/22bf4bcc9b.js" crossorigin="anonymous"></script>
+        <script src="./scripts/register_product.js" ></script>
+
+    </head>
+
+    <body onload="loadProductList()">
+        <nav id="nav-bar">
+            <div id="logo">Logo Mercado</div>
+
+            <span class="nav-link">
+                <a href="#">
+                    <i class="fa-solid fa-table-list"></i>
+                    Consultar o Estoque
+                </a>
+            
+                <a href="./add_product.html">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar no Estoque
+                </a>
+            </span>
+
+        </nav>
+
+        
+            <div id="search-product">
+                <input type="text" id="input-search" 
+                    placeholder="Digite o nome ou código de barra do produto"
+                >
+                <button id="search-btn" onclick="searchProduct()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div id="table-product">
+                <table id="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Nome do Produto</th>
+                        <th>Preço</th>
+                        <th>Em Estoque</th>
+                        <th>Código de Barras</th>
+                        <th>Data de Inclusão</th>
+                    </tr>
+                </table>
+            </div>
+       
+            
+
+    </body>
+</html>
